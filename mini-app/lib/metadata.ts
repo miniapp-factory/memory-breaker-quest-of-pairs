@@ -1,3 +1,3 @@
-export const title = "Memory Breaker: Quest of Pairs";
-export const description = "A cozy, story-based memory-matching game featuring soft pastel, hand-drawn chibi animals in 2D. Players travel through themed realms while matching cards, unlocking power-ups, and progressing through a gentle narrative. Inspired by Animal Crossing and Tsuki Odyssey.";
+export const title = "Memory Breaker: Soft Match Edition";
+export const description = "A simple and relaxing memory‑matching game with a soft pastel interface and clean, minimal card designs. Players flip cards to find matches, with a timer, score, and pause button. Progress is saved automatically so you can continue later.";
 export const url = process.env.NEXT_PUBLIC_URL;
