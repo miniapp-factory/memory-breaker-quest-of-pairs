@@ -134,3 +134,415 @@
 +```
 +
 +Generate an app logo and update the app metadata title and description.
+
+# 2025-12-01 06:28:27.430849
++Title: Memory Breaker: Quest of Pairs
++
++Description:
++Create a fully playable, cozy, story-based memory-matching game in 2D cartoon style using soft pastel, hand-drawn chibi animals. The game must include a main menu with a Start Game button, gameplay screen with clickable cards, increasing difficulty, power-ups, story narration, and a final boss level.
++
++🎨 Art & Visual Style Requirements
++
++Soft pastel palette (seafoam, dusty rose, peach, soft turquoise)
++
++2D hand-drawn chibi animals in job outfits (bellhop, sailor, chef, etc.)
++
++Thick outlines, round/simple shapes
++
++Low-stimulus, cozy atmosphere
++
++Optional toggle: Pixel-like low-res mode with same pastel colors
++
++Animated card flips (simple fade/rotate)
++
++Soft UI buttons with rounded corners
++
++🏠 Main Menu Requirements
++
++Create a home screen containing:
++
++Game title: Memory Breaker: Quest of Pairs
++
++Short subtitle description
++
++A Play Game button that starts Story Mode
++
++A Pixel Mode Toggle (optional aesthetic switch)
++
++A Continue button (if localStorage save exists)
++
++When the user presses Play Game, load Level 1.
++
++🕹 Core Gameplay Requirements
++
++The game must include:
++
++1. Clickable Cards
++
++Display a grid of face-down cards
++
++When the user clicks a card → it flips to reveal its art
++
++Clicking a second card reveals it
++
++If they match → remove them or mark them as cleared
++
++If they don’t match → flip both back over
++
++Smooth, cozy flipping animation
++
++2. Card Themes
++
++Each realm uses a different set of chibi animal cards to match:
++
++Meadow: rabbits, cats, birds
++
++Forest: bears, squirrels, foxes
++
++Frozen Peak: penguins, seals, snow bunnies
++
++Volcano: fire spirits, dragon cubs
++
++Final Boss Realm: corrupted chibi animals and boss tiles
++
++📖 Story Mode Requirements
++
++Each level begins with one short narration line from a cute chibi guide.
++Tone must be calm, cozy, not long.
++
++Example:
++"The Meadow spirits are cheering for you! Match the pairs and restore balance."
++
++Realms in order:
++
++Meadow
++
++Forest
++
++Frozen Peak
++
++Volcano
++
++Final Boss Realm
++
++Unlock next realm only after completing the previous one.
++
++📈 Difficulty Scaling
++
++Each level increases difficulty:
++
++Realm	Grid Size	Timer
++Meadow	2×2 → 3×4	Medium
++Forest	3×4 → 4×4	Shorter
++Frozen Peak	4×4 → 4×5	Faster
++Volcano	4×5 → 5×6	Fast
++Boss	5×6	Very fast + special rules
++
++Timer speeds up per realm.
++Optional vibration on card match (haptic feedback).
++
++🔮 Power-Up Cards (Triggered Only When Matched)
++
++Power-ups appear rarely in the grid as special pair types.
++They must not activate randomly, only when the matching pair is clicked.
++
++Power-ups include:
++
++1. Reveal All
++
++Reveals the whole board for 2–3 seconds
++
++2. Freeze Time
++
++Pauses timer temporarily
++
++3. Double Points
++
++Next match gives bonus score
++
++4. Shuffle Board
++
++Shuffles ONLY the remaining cards (never automatic)
++
++Power-up cards are visually distinct with glowing pastel borders.
++
++⭐ Feedback & Atmosphere
++
++Soft background music
++
++Gentle sound effects when flipping and matching
++
++Haptic vibration on correct matches
++
++Combo system: consecutive quick matches increase score
++
++Calm animations (glow on match, soft pop sound)
++
++💾 Saving Progress
++
++Use localStorage to automatically save:
++
++Current realm and level
++
++Score
++
++Pixel-mode setting
++
++Story progress
++
++On return, show a Continue button.
++
++🔥 Boss Level Requirements
++
++The Final Boss Realm includes:
++
++Faster timer
++
++Boss-only tiles
++
++A scrambling AI that periodically shuffles (only in boss level)
++
++Power-ups can stun the boss (pause scrambling for a short time)
++
++Player wins by clearing all pairs under pressure
++
++Boss must have a special intro line and ending dialogue.
++
++🧩 UI Layout Requirements
++During Gameplay:
++
++Timer bar or countdown
++
++Current score
++
++Combo indicator
++
++Pause button
++
++Grid of clickable cards
++
++Subtle background decorations based on the realm theme
++
++After Level Completion:
++
++Score summary
++
++Short story narration
++
++Next Level button
++
++If final boss is defeated → show Victory Screen.
++
++🎯 Goal of the Game
++
++Match all pairs, travel across all realms, defeat the final boss, and restore harmony to the Memory Realms.
++
++✔ Template
++
++Use the Slot Machine template for smooth grid/card behavior.
+
+# 2025-12-01 06:28:27.431390
++Title: Memory Breaker: Quest of Pairs
++
++Description:
++Create a fully playable, cozy, story-based memory-matching game in 2D cartoon style using soft pastel, hand-drawn chibi animals. The game must include a main menu with a Start Game button, gameplay screen with clickable cards, increasing difficulty, power-ups, story narration, and a final boss level.
++
++🎨 Art & Visual Style Requirements
++
++Soft pastel palette (seafoam, dusty rose, peach, soft turquoise)
++
++2D hand-drawn chibi animals in job outfits (bellhop, sailor, chef, etc.)
++
++Thick outlines, round/simple shapes
++
++Low-stimulus, cozy atmosphere
++
++Optional toggle: Pixel-like low-res mode with same pastel colors
++
++Animated card flips (simple fade/rotate)
++
++Soft UI buttons with rounded corners
++
++🏠 Main Menu Requirements
++
++Create a home screen containing:
++
++Game title: Memory Breaker: Quest of Pairs
++
++Short subtitle description
++
++A Play Game button that starts Story Mode
++
++A Pixel Mode Toggle (optional aesthetic switch)
++
++A Continue button (if localStorage save exists)
++
++When the user presses Play Game, load Level 1.
++
++🕹 Core Gameplay Requirements
++
++The game must include:
++
++1. Clickable Cards
++
++Display a grid of face-down cards
++
++When the user clicks a card → it flips to reveal its art
++
++Clicking a second card reveals it
++
++If they match → remove them or mark them as cleared
++
++If they don’t match → flip both back over
++
++Smooth, cozy flipping animation
++
++2. Card Themes
++
++Each realm uses a different set of chibi animal cards to match:
++
++Meadow: rabbits, cats, birds
++
++Forest: bears, squirrels, foxes
++
++Frozen Peak: penguins, seals, snow bunnies
++
++Volcano: fire spirits, dragon cubs
++
++Final Boss Realm: corrupted chibi animals and boss tiles
++
++📖 Story Mode Requirements
++
++Each level begins with one short narration line from a cute chibi guide.
++Tone must be calm, cozy, not long.
++
++Example:
++"The Meadow spirits are cheering for you! Match the pairs and restore balance."
++
++Realms in order:
++
++Meadow
++
++Forest
++
++Frozen Peak
++
++Volcano
++
++Final Boss Realm
++
++Unlock next realm only after completing the previous one.
++
++📈 Difficulty Scaling
++
++Each level increases difficulty:
++
++Realm	Grid Size	Timer
++Meadow	2×2 → 3×4	Medium
++Forest	3×4 → 4×4	Shorter
++Frozen Peak	4×4 → 4×5	Faster
++Volcano	4×5 → 5×6	Fast
++Boss	5×6	Very fast + special rules
++
++Timer speeds up per realm.
++Optional vibration on card match (haptic feedback).
++
++🔮 Power-Up Cards (Triggered Only When Matched)
++
++Power-ups appear rarely in the grid as special pair types.
++They must not activate randomly, only when the matching pair is clicked.
++
++Power-ups include:
++
++1. Reveal All
++
++Reveals the whole board for 2–3 seconds
++
++2. Freeze Time
++
++Pauses timer temporarily
++
++3. Double Points
++
++Next match gives bonus score
++
++4. Shuffle Board
++
++Shuffles ONLY the remaining cards (never automatic)
++
++Power-up cards are visually distinct with glowing pastel borders.
++
++⭐ Feedback & Atmosphere
++
++Soft background music
++
++Gentle sound effects when flipping and matching
++
++Haptic vibration on correct matches
++
++Combo system: consecutive quick matches increase score
++
++Calm animations (glow on match, soft pop sound)
++
++💾 Saving Progress
++
++Use localStorage to automatically save:
++
++Current realm and level
++
++Score
++
++Pixel-mode setting
++
++Story progress
++
++On return, show a Continue button.
++
++🔥 Boss Level Requirements
++
++The Final Boss Realm includes:
++
++Faster timer
++
++Boss-only tiles
++
++A scrambling AI that periodically shuffles (only in boss level)
++
++Power-ups can stun the boss (pause scrambling for a short time)
++
++Player wins by clearing all pairs under pressure
++
++Boss must have a special intro line and ending dialogue.
++
++🧩 UI Layout Requirements
++During Gameplay:
++
++Timer bar or countdown
++
++Current score
++
++Combo indicator
++
++Pause button
++
++Grid of clickable cards
++
++Subtle background decorations based on the realm theme
++
++After Level Completion:
++
++Score summary
++
++Short story narration
++
++Next Level button
++
++If final boss is defeated → show Victory Screen.
++
++🎯 Goal of the Game
++
++Match all pairs, travel across all realms, defeat the final boss, and restore harmony to the Memory Realms.
++
++✔ Template
++
++Use the Slot Machine template for smooth grid/card behavior.
